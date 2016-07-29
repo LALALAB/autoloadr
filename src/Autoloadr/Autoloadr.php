@@ -2,10 +2,6 @@
 
 namespace Autoloadr;
 
-//TODO: Use composer autolaoder ? Make a classmap loader to load autoloadr ?
-require_once __DIR__ . DIRECTORY_SEPARATOR . 'AutoloadrInterface.php';
-
-
 /**
  * Class Autoloadr
  *
