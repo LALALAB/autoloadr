@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Autoloadr\\": "src/"
+            "Autoloadr\\": "src/Autoloadr/"
         }
     }
 }
