@@ -3,9 +3,9 @@
 PHP Autoloaders  
 
 ## Universal Autoloadr : 
-    - PSR 0 
-    - PSR 4 
-    - Directories names can be lowercase, still following PSR directives
+   - PSR 0 
+   - PSR 4 
+   - Directories names can be lowercase, still following PSR directives
     
     
 ### Exemple : 
