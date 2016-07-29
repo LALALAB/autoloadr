@@ -1,6 +1,6 @@
 {
     "name": "alex-robert/autoloadr",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "description": "PHP Autoload facilities",
     "keywords": ["php", "autoload", "psr4", "autoload-map"],
     "type": "library",
