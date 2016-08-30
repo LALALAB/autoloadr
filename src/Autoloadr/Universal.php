@@ -20,6 +20,11 @@ Class Universal extends Autoloadr implements AutoloadrInterface{
 
 
 
+    public function get_prefixes(){
+        return $this->_prefix_paths;
+    }
+
+
     /**
      * @param $directories
      */
@@ -41,6 +46,7 @@ Class Universal extends Autoloadr implements AutoloadrInterface{
             $this->_prefix_paths[] = $real_dir;
         }
     }
+
 
 
     /**
