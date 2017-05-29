@@ -62,8 +62,9 @@ Class Universal extends Autoloadr implements AutoloadrInterface{
         $dash_pos   = strpos($class_name, '_');
         $dash_class = $dash_pos !== false && $dash_pos < (strlen($class_name)-1);
 
-        $file_name  = $dash_class ? array_pop(explode('_', $class_name)) . '.php' : $class_name . '.php';
-        $real_path .= $dash_class ? DIRECTORY_SEPARATOR . implode(DIRECTORY_SEPARATOR, array_slice(explode('_', $class_name), 0, count(explode('_', $class_name)) - 1)) : '';
+        $exploded = explode('_', $class_name);
+        $file_name  = $dash_class ? array_pop($exploded) . '.php' : $class_name . '.php';
+        $real_path .= $dash_class ? DIRECTORY_SEPARATOR . implode(DIRECTORY_SEPARATOR, array_slice($exploded, 0, count($exploded) - 1)) : '';
         $real_path .= $real_path  ? DIRECTORY_SEPARATOR : '';
 
 
@@ -72,7 +73,7 @@ Class Universal extends Autoloadr implements AutoloadrInterface{
 
             $lower_path = $base_path . strtolower($real_path) . $file_name;
             $upper_path = $base_path . $real_path . $file_name;
-            
+
             if (file_exists($lower_path)) {
                 return $lower_path;
             } else if (file_exists($upper_path)) {
