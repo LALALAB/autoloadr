@@ -1,5 +1,5 @@
 {
-    "name": "alex-robert/autoloadr",
+    "name": "lalalab/autoloadr",
     "version": "0.0.0",
     "description": "PHP Autoload facilities",
     "keywords": ["php", "autoload", "psr4", "autoload-map"],
